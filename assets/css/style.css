@@ -1,11 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body, html {
     height: 100%;
 }
 
+body {
+    background: #fec7d7;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* BOX */
+
+.box {
+    width: auto;
+    height: 500px;
+
+    background: #f9f8fc;
+
+
+    box-shadow: 0px 0px 10px 1px gray;
+
+    padding: 5px;
+}
+
+
+/* SCREEN */
+
+
+.screen {
+    width: 300px;
+    height: 125px;
+
+    background-color: #d9d4e7;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 5px;
+}
+
+#result {
+    font-size: 50px;
+
+    color: #fffffe;
+}
+
+
+/* KEYBOARD */
+
+
+.keyboard {
+
+    width: 300px;
+    height: calc(100% - 125px);
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+
+
+    padding-top: 5px;
+}
+
+
+
+.btn {
+    border:0;
+
+    background-color: #0e172c;
+
+    color: #fec7d7;
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #0e172c9e;
+}
+
+
+.func {
+    background-color: #a786df;
+
+    color: #0e172c;
+}
+
+.func:hover {
+    background-color: #a786dfa4;
+
+    color: #0e172c;
+}
