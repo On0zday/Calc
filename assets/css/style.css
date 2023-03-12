@@ -67,7 +67,8 @@ body {
 
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
     grid-column-gap: 5px;
     grid-row-gap: 5px;
 
@@ -88,7 +89,6 @@ body {
 
     transition: 0.5s;
 }
-
 .btn:hover {
     background-color: #0e172c9e;
 }
